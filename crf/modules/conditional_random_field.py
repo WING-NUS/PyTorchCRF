@@ -1,7 +1,5 @@
 # ==============================================================================
 #
-#  Here is the original copyright notice:
-#
 #  Copyright (c) 2018 AllenAI
 #
 #  Apache License
@@ -13,8 +11,8 @@ from typing import List, Tuple, Dict
 
 import torch
 
-from allennlp.common.checks import ConfigurationError
-import allennlp.nn.util as util
+from crf.common.checks import ConfigurationError
+import crf.nn.util as util
 
 
 def allowed_transitions(constraint_type: str, labels: Dict[int, str]) -> List[Tuple[int, int]]:

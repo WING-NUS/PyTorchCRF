@@ -5,13 +5,14 @@ import math
 from pytest import approx, raises
 import torch
 
-from allennlp.modules import ConditionalRandomField
-from allennlp.modules.conditional_random_field import allowed_transitions
-from allennlp.common.checks import ConfigurationError
-from allennlp.common.testing import AllenNlpTestCase
+from crf.modules import ConditionalRandomField
+from crf.modules.conditional_random_field import allowed_transitions
+from crf.common.checks import ConfigurationError
+
+from crf.common.testing import NlpTestCase
 
 
-class TestConditionalRandomField(AllenNlpTestCase):
+class TestConditionalRandomField(NlpTestCase):
     def setUp(self):
         super().setUp()
         self.logits = torch.Tensor([
