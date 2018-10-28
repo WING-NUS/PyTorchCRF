@@ -5,8 +5,6 @@ setup(
     version="0.1",
     packages=find_packages(),
 
-    scripts=['say_hello.py'],
-
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
     install_requires=['torch>=0.4.1'],
