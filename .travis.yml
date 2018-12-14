@@ -6,7 +6,7 @@ python:
 - 3.6
 install:
 - python setup.py sdist
-- pip install -r -q requirements.txt
+- pip install -q -r requirements.txt
 script:
 - pytest
 on: master
