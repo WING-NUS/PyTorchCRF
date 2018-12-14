@@ -7,7 +7,7 @@ setup(
 
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
-    install_requires=['torch>=0.4.1'],
+    install_requires=['torch>=1.0.0'],
 
     package_data={
         # If any package contains *.txt or *.rst files, include them:
